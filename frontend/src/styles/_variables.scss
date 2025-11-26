@@ -1,0 +1,441 @@
+/**
+ * Chronotes 设计变量 - SCSS 版本
+ * 基于莫兰迪色系的现代设计系统
+ * 版本：v1.0
+ */
+
+// ========================================
+// 颜色系统（Color System）
+// ========================================
+
+// 主色系 - 莫兰迪绿
+$color-primary-dark: #7D9570;
+$color-primary: #9CAF88;
+$color-primary-light: #B8C9A8;
+$color-primary-lighter: #D4E1C8;
+
+// 副色系 - 柔和蓝
+$color-secondary-dark: #8EB0BF;
+$color-secondary: #A8C5D1;
+$color-secondary-light: #C2D9E3;
+$color-secondary-lighter: #DDE9F0;
+
+// 中性色系
+$color-text-primary: #4A4A4A;
+$color-text-secondary: #7A7A7A;
+$color-text-tertiary: #A0A0A0;
+$color-text-disabled: #CCCCCC;
+
+$color-border: #E8E8E8;
+$color-border-light: #F0F0F0;
+$color-divider: #E8E8E8;
+
+$color-bg-primary: #F5F1E8;
+$color-bg-secondary: #FFFFFF;
+$color-bg-tertiary: #FAF8F3;
+$color-bg-hover: #F5F1E8;
+
+// 功能色系
+$color-success: #88C070;
+$color-success-light: #A8D090;
+$color-success-bg: #E8F5E3;
+
+$color-warning: #F0B967;
+$color-warning-light: #F5CA87;
+$color-warning-bg: #FEF5E7;
+
+$color-error: #E87D7D;
+$color-error-light: #F0A0A0;
+$color-error-bg: #FDEAEA;
+
+$color-info: #A8C5D1;
+$color-info-light: #C2D9E3;
+$color-info-bg: #E8F1F5;
+
+// 阴影颜色
+$shadow-color-light: rgba(0, 0, 0, 0.04);
+$shadow-color: rgba(0, 0, 0, 0.08);
+$shadow-color-hover: rgba(0, 0, 0, 0.12);
+$shadow-color-dark: rgba(0, 0, 0, 0.16);
+
+// ========================================
+// 颜色映射（Color Maps）
+// ========================================
+
+$colors-primary: (
+  dark: $color-primary-dark,
+  base: $color-primary,
+  light: $color-primary-light,
+  lighter: $color-primary-lighter
+);
+
+$colors-secondary: (
+  dark: $color-secondary-dark,
+  base: $color-secondary,
+  light: $color-secondary-light,
+  lighter: $color-secondary-lighter
+);
+
+$colors-text: (
+  primary: $color-text-primary,
+  secondary: $color-text-secondary,
+  tertiary: $color-text-tertiary,
+  disabled: $color-text-disabled
+);
+
+$colors-bg: (
+  primary: $color-bg-primary,
+  secondary: $color-bg-secondary,
+  tertiary: $color-bg-tertiary,
+  hover: $color-bg-hover
+);
+
+// ========================================
+// 字体系统（Typography）
+// ========================================
+
+// 字体家族
+$font-family-base: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+$font-family-mono: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+// 字号
+$font-size-tiny: 0.6875rem;    // 11px
+$font-size-xs: 0.75rem;        // 12px
+$font-size-sm: 0.8125rem;      // 13px
+$font-size-base: 0.875rem;     // 14px
+$font-size-lg: 1rem;           // 16px
+$font-size-xl: 1.125rem;       // 18px
+$font-size-2xl: 1.5rem;        // 24px
+$font-size-3xl: 1.75rem;       // 28px
+$font-size-4xl: 2rem;          // 32px
+
+// 字号映射
+$font-sizes: (
+  tiny: $font-size-tiny,
+  xs: $font-size-xs,
+  sm: $font-size-sm,
+  base: $font-size-base,
+  lg: $font-size-lg,
+  xl: $font-size-xl,
+  2xl: $font-size-2xl,
+  3xl: $font-size-3xl,
+  4xl: $font-size-4xl
+);
+
+// 字重
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// 字重映射
+$font-weights: (
+  regular: $font-weight-regular,
+  medium: $font-weight-medium,
+  semibold: $font-weight-semibold,
+  bold: $font-weight-bold
+);
+
+// 行高
+$line-height-tight: 1.2;
+$line-height-snug: 1.4;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.6;
+$line-height-loose: 1.8;
+
+// 字间距
+$letter-spacing-tight: -0.5px;
+$letter-spacing-normal: 0;
+$letter-spacing-wide: 0.5px;
+
+// ========================================
+// 间距系统（Spacing Scale）
+// ========================================
+
+$spacing-0: 0;
+$spacing-1: 0.25rem;   // 4px
+$spacing-2: 0.5rem;    // 8px
+$spacing-3: 0.75rem;   // 12px
+$spacing-4: 1rem;      // 16px
+$spacing-5: 1.25rem;   // 20px
+$spacing-6: 1.5rem;    // 24px
+$spacing-7: 1.75rem;   // 28px
+$spacing-8: 2rem;      // 32px
+$spacing-10: 2.5rem;   // 40px
+$spacing-12: 3rem;     // 48px
+$spacing-16: 4rem;     // 64px
+
+// 间距映射
+$spacings: (
+  0: $spacing-0,
+  1: $spacing-1,
+  2: $spacing-2,
+  3: $spacing-3,
+  4: $spacing-4,
+  5: $spacing-5,
+  6: $spacing-6,
+  7: $spacing-7,
+  8: $spacing-8,
+  10: $spacing-10,
+  12: $spacing-12,
+  16: $spacing-16
+);
+
+// ========================================
+// 圆角系统（Border Radius）
+// ========================================
+
+$radius-none: 0;
+$radius-sm: 0.25rem;   // 4px
+$radius-base: 0.5rem;  // 8px
+$radius-md: 0.625rem;  // 10px
+$radius-lg: 0.75rem;   // 12px
+$radius-xl: 1rem;      // 16px
+$radius-2xl: 1.25rem;  // 20px
+$radius-full: 9999px;
+
+// 圆角映射
+$radiuses: (
+  none: $radius-none,
+  sm: $radius-sm,
+  base: $radius-base,
+  md: $radius-md,
+  lg: $radius-lg,
+  xl: $radius-xl,
+  2xl: $radius-2xl,
+  full: $radius-full
+);
+
+// ========================================
+// 阴影系统（Box Shadow）
+// ========================================
+
+$shadow-none: none;
+$shadow-xs: 0 1px 2px $shadow-color-light;
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-base: 0 2px 8px $shadow-color;
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.10);
+$shadow-lg: 0 8px 20px $shadow-color-hover;
+$shadow-xl: 0 12px 28px rgba(0, 0, 0, 0.15);
+$shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+// 阴影映射
+$shadows: (
+  none: $shadow-none,
+  xs: $shadow-xs,
+  sm: $shadow-sm,
+  base: $shadow-base,
+  md: $shadow-md,
+  lg: $shadow-lg,
+  xl: $shadow-xl,
+  inner: $shadow-inner
+);
+
+// ========================================
+// 组件尺寸（Component Sizes）
+// ========================================
+
+// 按钮尺寸
+$btn-height-sm: 2rem;      // 32px
+$btn-height-md: 2.5rem;    // 40px
+$btn-height-lg: 3rem;      // 48px
+
+$btn-padding-x-sm: 0.75rem;  // 12px
+$btn-padding-x-md: 1rem;     // 16px
+$btn-padding-x-lg: 1.5rem;   // 24px
+
+// 输入框尺寸
+$input-height-sm: 2rem;      // 32px
+$input-height-md: 2.5rem;    // 40px
+$input-height-lg: 3rem;      // 48px
+
+$input-padding-x-sm: 0.75rem;  // 12px
+$input-padding-x-md: 1rem;     // 16px
+$input-padding-x-lg: 1.25rem;  // 20px
+
+// 图标尺寸
+$icon-size-xs: 0.875rem;   // 14px
+$icon-size-sm: 1rem;       // 16px
+$icon-size-md: 1.125rem;   // 18px
+$icon-size-lg: 1.5rem;     // 24px
+$icon-size-xl: 2rem;       // 32px
+
+// 头像尺寸
+$avatar-size-sm: 2rem;     // 32px
+$avatar-size-md: 2.5rem;   // 40px
+$avatar-size-lg: 3rem;     // 48px
+$avatar-size-xl: 4rem;     // 64px
+
+// ========================================
+// 布局尺寸（Layout Sizes）
+// ========================================
+
+$navbar-height: 4rem;          // 64px
+$sidebar-first-width: 4.5rem;  // 72px
+$sidebar-second-width: 16.25rem; // 260px
+$panel-right-width: 17.5rem;   // 280px
+
+// ========================================
+// 过渡动画（Transitions）
+// ========================================
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.2s ease;
+$transition-slow: 0.3s ease;
+$transition-slower: 0.4s ease;
+
+// ========================================
+// Z-Index 层级（Z-Index Scale）
+// ========================================
+
+$z-index-dropdown: 10;
+$z-index-sticky: 20;
+$z-index-fixed: 30;
+$z-index-sidebar: 40;
+$z-index-sidebar-first: 50;
+$z-index-navbar: 100;
+$z-index-modal-backdrop: 900;
+$z-index-modal: 1000;
+$z-index-tooltip: 1100;
+
+// Z-Index 映射
+$z-indexes: (
+  dropdown: $z-index-dropdown,
+  sticky: $z-index-sticky,
+  fixed: $z-index-fixed,
+  sidebar: $z-index-sidebar,
+  sidebar-first: $z-index-sidebar-first,
+  navbar: $z-index-navbar,
+  modal-backdrop: $z-index-modal-backdrop,
+  modal: $z-index-modal,
+  tooltip: $z-index-tooltip
+);
+
+// ========================================
+// 断点（Breakpoints）
+// ========================================
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+$breakpoints: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+  2xl: $breakpoint-2xl
+);
+
+// ========================================
+// Mixins 工具
+// ========================================
+
+// 响应式断点 Mixin
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+  }
+}
+
+// 使用示例：
+// .element {
+//   width: 100%;
+//   @include respond-to(md) {
+//     width: 50%;
+//   }
+// }
+
+// 柔和阴影 Mixin
+@mixin soft-shadow($level: base) {
+  @if map-has-key($shadows, $level) {
+    box-shadow: map-get($shadows, $level);
+  } @else {
+    box-shadow: $shadow-base;
+  }
+}
+
+// 悬停效果 Mixin
+@mixin hover-lift($offset: -4px, $shadow: lg) {
+  transition: all $transition-slow;
+  
+  &:hover {
+    transform: translateY($offset);
+    @include soft-shadow($shadow);
+  }
+}
+
+// 卡片样式 Mixin
+@mixin card($padding: $spacing-5, $radius: $radius-xl) {
+  background: $color-bg-secondary;
+  border-radius: $radius;
+  padding: $padding;
+  @include soft-shadow(base);
+  @include hover-lift();
+}
+
+// 截断文本 Mixin
+@mixin truncate($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+// 居中定位 Mixin
+@mixin center($position: absolute) {
+  position: $position;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Flex 居中 Mixin
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ========================================
+// 函数工具
+// ========================================
+
+// 获取间距
+@function spacing($key) {
+  @if map-has-key($spacings, $key) {
+    @return map-get($spacings, $key);
+  } @else {
+    @warn "Unknown spacing key: #{$key}.";
+    @return 0;
+  }
+}
+
+// 获取颜色
+@function color-primary($key: base) {
+  @if map-has-key($colors-primary, $key) {
+    @return map-get($colors-primary, $key);
+  } @else {
+    @return $color-primary;
+  }
+}
+
+@function color-secondary($key: base) {
+  @if map-has-key($colors-secondary, $key) {
+    @return map-get($colors-secondary, $key);
+  } @else {
+    @return $color-secondary;
+  }
+}
