@@ -4,6 +4,9 @@
  * 版本：v1.0
  */
 
+// 导入 Sass 模块
+@use "sass:map";
+
 // ========================================
 // 颜色系统（Color System）
 // ========================================
@@ -335,8 +338,8 @@ $breakpoints: (
 
 // 响应式断点 Mixin
 @mixin respond-to($breakpoint) {
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
       @content;
     }
   } @else {
@@ -354,8 +357,8 @@ $breakpoints: (
 
 // 柔和阴影 Mixin
 @mixin soft-shadow($level: base) {
-  @if map-has-key($shadows, $level) {
-    box-shadow: map-get($shadows, $level);
+  @if map.has-key($shadows, $level) {
+    box-shadow: map.get($shadows, $level);
   } @else {
     box-shadow: $shadow-base;
   }

@@ -151,6 +151,12 @@ const toggleMode = () => {
   min-height: 540px;
   background: $color-bg-secondary;
   border-radius: $radius-2xl;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.dual-card__left {
+  padding-top: 40px;
 }
 
 @keyframes slideUp {
